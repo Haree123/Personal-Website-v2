@@ -1,4 +1,4 @@
-import Icon from "./components/Icon";
+import Icon from "../components/Icon";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
             DEVELOPER{" "}
             <sup className="inline-block">
               <Icon
-                isAsterisk={true}
+                className="asterisk"
                 darkIcon="/assets/Black-asterisk.svg"
                 icon="/assets/asterisk.svg"
                 height={25}
@@ -45,7 +45,7 @@ const Home = () => {
             return (
               <div className="flex space-x-5" key={`${marqueeItem}-${index}`}>
                 <Icon
-                  isAsterisk={true}
+                  className="asterisk"
                   darkIcon="/assets/Black-asterisk.svg"
                   icon="/assets/asterisk.svg"
                   height={20}

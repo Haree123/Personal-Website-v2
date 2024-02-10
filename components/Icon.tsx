@@ -3,14 +3,14 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 interface IconProps {
+  className: string;
   darkIcon: string;
   icon: string;
-  isAsterisk?: boolean;
   height: number;
   width: number;
 }
 
-const Icon = ({ darkIcon, icon, isAsterisk, height, width }: IconProps) => {
+const Icon = ({ className, darkIcon, icon, height, width }: IconProps) => {
   const { theme } = useTheme();
 
   const img = theme === "light" ? darkIcon : icon;
@@ -18,7 +18,7 @@ const Icon = ({ darkIcon, icon, isAsterisk, height, width }: IconProps) => {
   return (
     <>
       <Image
-        className={isAsterisk ? "asterisk" : ""}
+        className={className}
         src={img}
         alt="icon"
         height={height}

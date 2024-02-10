@@ -18,7 +18,7 @@ const Menu = () => {
       </Link>
       <Link
         href="/about"
-        className="font-black text-4xl md:text-5xl lg:text-6xll"
+        className="font-black text-4xl md:text-5xl lg:text-6xl"
         onClick={handleMenuOpen}
       >
         <span className="text-sm">02.</span> ABOUT
