@@ -1,4 +1,3 @@
-import ThemeSwitcher from "./Theme-Switcher";
 import MenuIcon from "./Menu-Icon";
 import Link from "next/link";
 
