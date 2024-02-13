@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Icon from "./Icon";
 import useGlobalStore from "@/store/global.store";
+import Image from "next/image";
 
 const Menu = () => {
   const { handleMenuOpen } = useGlobalStore();
@@ -39,31 +39,37 @@ const Menu = () => {
       </Link>
 
       <div className="flex space-x-5">
-        <div className="flex">
-          <Icon
-            darkIcon="/assets/Black-Link.svg"
-            icon="/assets/Link.svg"
+        <a href="https://github.com/Haree123" target="_blank" className="flex">
+          <Image
+            src="/assets/Link.svg"
             height={16}
             width={16}
+            quality={100}
+            alt="Link"
           />
 
           <span className="pl-2 text-base md:text-xl lg:text-2xl tracking-wider">
             Github
           </span>
-        </div>
+        </a>
 
-        <div className="flex">
-          <Icon
-            darkIcon="/assets/Black-Link.svg"
-            icon="/assets/Link.svg"
+        <a
+          href="https://www.linkedin.com/in/haree-prasad-275180158"
+          target="_blank"
+          className="flex"
+        >
+          <Image
+            src="/assets/Link.svg"
             height={16}
             width={16}
+            alt="Link"
+            quality={100}
           />
 
           <span className="pl-2 text-base md:text-xl lg:text-2xl tracking-wider">
             LinkedIn
           </span>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -10,10 +10,6 @@ const Header = () => {
       </Link>
 
       <div className="flex space-x-7">
-        <div className="hidden md:inline-block">
-          <ThemeSwitcher />
-        </div>
-
         <MenuIcon />
       </div>
     </header>

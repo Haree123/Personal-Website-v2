@@ -9,7 +9,7 @@
 }
 
 body {
-  --cal: calc(8.3333% - 1px);
+  --cal: calc(8.33333333333% - 1px);
   background: repeating-linear-gradient(
     to left,
     rgba(245, 242, 235, 0) 0 var(--cal),

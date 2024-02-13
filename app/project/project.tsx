@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import Icon from "@/components/Icon";
 import { projects } from "./constants";
 
 type ProjectProps = {
@@ -10,42 +9,46 @@ type ProjectProps = {
 const Project = ({ selectedProject }: ProjectProps) => {
   return (
     <div>
-      <div className="flex justify-between mb-3">
-        <h2 className="font-semibold text-lg lg:text-2xl">Overview</h2>
+      <div className="flex justify-between mb-2">
+        <h2 className="font-semibold text-sm md:text-lg lg:text-2xl">
+          Overview
+        </h2>
 
         <div className="flex items-center space-x-5">
           {projects[selectedProject].github && (
             <a href={projects[selectedProject].github} target="_blank">
-              <Icon
-                darkIcon="/assets/Black-Github.svg"
-                icon="/assets/Github.svg"
-                className=""
+              <Image
+                alt="Github"
+                src="/assets/Github.svg"
                 height={20}
                 width={20}
+                quality={100}
               />
             </a>
           )}
 
           {projects[selectedProject].links && selectedProject !== 0 && (
             <a href={projects[selectedProject].links} target="_blank">
-              <Icon
-                icon="/assets/Link.svg"
-                darkIcon="/assets/Black-Link.svg"
+              <Image
+                src="/assets/Link.svg"
+                alt="Link"
+                quality={100}
                 height={20}
                 width={20}
-                className=""
               />
             </a>
           )}
         </div>
       </div>
-      <p className="text-sm lg:text-lg text-justify">
+      <p className="text-xs md:text-base lg:text-lg text-justify">
         {projects[selectedProject].description}
       </p>
 
-      <h4 className="mt-5 font-semibold text-2xl">Tools</h4>
+      <h4 className="mt-5 font-semibold text-sm md:text-lg lg:text-2xl">
+        Tools
+      </h4>
 
-      <div className="grid grid-cols-2 gap-y-2 lg:gap-y-10 my-5">
+      <div className="grid grid-cols-2 gap-y-2 lg:gap-y-5 mt-2 mb-5">
         {projects[selectedProject].tools.map((item, index) => {
           return (
             <div
