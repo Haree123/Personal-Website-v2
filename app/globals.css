@@ -13,7 +13,7 @@ body {
   background: repeating-linear-gradient(
     to left,
     rgba(245, 242, 235, 0) 0 var(--cal),
-    #f9f9f917 var(--cal) calc(var(--cal) + 1px)
+    rgba(249, 249, 249, 0.054) var(--cal) calc(var(--cal) + 1px)
   );
 }
 
