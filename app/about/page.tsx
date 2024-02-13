@@ -66,7 +66,7 @@ const About = () => {
           {curriculum.map((curriculumItem) => {
             return (
               <div key={curriculumItem.id}>
-                <div className="flex justify-between space-x-10 my-10">
+                <div className="flex justify-between space-x-10 my-3 md:my-7 lg:my-10">
                   <h3 className="text-xs md:text-xl lg:text-2xl w-1/3">
                     {curriculumItem.range}
                   </h3>
@@ -88,7 +88,7 @@ const About = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer isIcons={true} />
     </div>
   );
 };

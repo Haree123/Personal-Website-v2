@@ -1,17 +1,17 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
-import Icon from "@/components/Icon";
+import Footer from "@/components/footer";
 import Project from "./project";
 import { projects } from "./constants";
-import Footer from "@/components/footer";
 
 const ProjectWrapper = () => {
   const [selectedProject, setSelectedProject] = useState(0);
 
   return (
     <div className="my-5 md:my-20 px-4 md:px-[104px]">
-      <h2 className="font-black text-3xl lg:text-5xl">Projects</h2>
+      <h2 className="font-black text-2xl md:text-4xl lg:text-5xl">Projects</h2>
 
       <hr className="mt-5" />
 
@@ -31,12 +31,13 @@ const ProjectWrapper = () => {
                 </h2>
 
                 {selectedProject === projectItem.id - 1 && (
-                  <Icon
-                    darkIcon="/assets/Black-Caret-Down.svg"
-                    icon="/assets/Caret-Down.svg"
+                  <Image
+                    className="mr-2"
+                    src="/assets/Caret-Down.svg"
                     height={7}
                     width={7}
-                    className="mr-2"
+                    quality={100}
+                    alt="Down"
                   />
                 )}
               </div>
@@ -68,9 +69,10 @@ const ProjectWrapper = () => {
                   </h2>
 
                   {selectedProject === projectItem.id - 1 && (
-                    <Icon
-                      darkIcon="/assets/Black-Caret-Right.svg"
-                      icon="/assets/Caret-Right.svg"
+                    <Image
+                      alt="Right"
+                      quality={100}
+                      src="/assets/Caret-Right.svg"
                       height={13}
                       width={13}
                       className="mr-10"
@@ -88,7 +90,7 @@ const ProjectWrapper = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer isIcons={true} />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import Icon from "../components/Icon";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -11,12 +11,13 @@ const Home = () => {
           <p className="text-4xl md:text-5xl lg:text-7xl font-black">
             DEVELOPER{" "}
             <sup className="inline-block">
-              <Icon
+              <Image
                 className="asterisk"
-                darkIcon="/assets/Black-asterisk.svg"
-                icon="/assets/asterisk.svg"
+                alt="asterisk"
+                src="/assets/asterisk.svg"
                 height={25}
                 width={25}
+                quality={100}
               />
             </sup>
           </p>
@@ -44,12 +45,13 @@ const Home = () => {
           {Array.from({ length: 10 }).map((marqueeItem, index) => {
             return (
               <div className="flex space-x-5" key={`${marqueeItem}-${index}`}>
-                <Icon
+                <Image
                   className="asterisk"
-                  darkIcon="/assets/Black-asterisk.svg"
-                  icon="/assets/asterisk.svg"
+                  alt="asterisk"
+                  src="/assets/asterisk.svg"
                   height={20}
                   width={20}
+                  quality={100}
                 />
                 <p>/WEB DEVELOPER/FRONTEND DEVELOPER/FRONTEND LEAD</p>
               </div>

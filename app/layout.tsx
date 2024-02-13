@@ -3,7 +3,6 @@ import { GeistSans } from "geist/font/sans";
 
 import "./globals.css";
 import Header from "../components/header";
-import ThemeProvider from "../components/Theme-Provider";
 import LayoutWrapper from "../components/Wrapper";
 
 export const metadata: Metadata = {
@@ -18,12 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="bg-[#d2d3db] text-[#2e2e2e] dark:bg-[#313130] dark:text-white">
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <Header />
+      <body className="bg-[#313130] text-white">
+        <Header />
 
-          <LayoutWrapper>{children}</LayoutWrapper>
-        </ThemeProvider>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );
