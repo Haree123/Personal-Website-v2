@@ -8,7 +8,7 @@ const Menu = () => {
   const { handleMenuOpen } = useGlobalStore();
 
   return (
-    <div className="fixed top-25 left-0 pt-[25%] md:pt-[20%] lg:pt-[10%] pl-[15%] md:pl-[25%] flex flex-col space-y-12">
+    <div className="fixed left-0 pl-[15%] md:pl-[25%] flex flex-col justify-center h-[88vh] space-y-12">
       <Link
         href="/"
         className="font-black text-4xl md:text-5xl lg:text-6xl"
@@ -38,7 +38,7 @@ const Menu = () => {
         <span className="text-sm">04.</span> CONTACT
       </Link>
 
-      <div className="flex space-x-5">
+      <div className="flex space-x-5 pb-10">
         <a href="https://github.com/Haree123" target="_blank" className="flex">
           <Image
             src="/assets/Link.svg"

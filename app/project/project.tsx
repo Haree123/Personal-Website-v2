@@ -16,25 +16,33 @@ const Project = ({ selectedProject }: ProjectProps) => {
 
         <div className="flex items-center space-x-5">
           {projects[selectedProject].github && (
-            <a href={projects[selectedProject].github} target="_blank">
+            <a
+              className="h-[15px] w-[15px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px]"
+              href={projects[selectedProject].github}
+              target="_blank"
+            >
               <Image
                 alt="Github"
                 src="/assets/Github.svg"
-                height={20}
-                width={20}
+                height={24}
+                width={24}
                 quality={100}
               />
             </a>
           )}
 
           {projects[selectedProject].links && selectedProject !== 0 && (
-            <a href={projects[selectedProject].links} target="_blank">
+            <a
+              className="h-[15px] w-[15px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px]"
+              href={projects[selectedProject].links}
+              target="_blank"
+            >
               <Image
                 src="/assets/Link.svg"
                 alt="Link"
                 quality={100}
-                height={20}
-                width={20}
+                height={23}
+                width={23}
               />
             </a>
           )}
