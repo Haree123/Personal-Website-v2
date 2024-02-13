@@ -47,7 +47,7 @@ const About = () => {
         <h2 className="font-black text-3xl lg:text-5xl">About Me</h2>
 
         <p className="text-lg w-full lg:w-2/5">
-          Hello! My name is Haree Prasad and I'm a passionate and creative
+          Hello! My name is Haree Prasad and I&apos;m a passionate and creative
           frontend developer with a love for building engaging and user-friendly
           web applications. I thrive on turning ideas into interactive and my
           journey in the world of programming started in 2022.

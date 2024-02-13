@@ -8,7 +8,7 @@ const Contact = () => {
 
       <div className="my-3 md:my-5 lg:my-10 font-semibold tracking-wider text-2xl md:text-5xl lg:text-7xl w-full">
         <p className="text-[#6C6C6C] leading-snug">
-          Hey ! I'm <span className="text-white w-full">Haree&nbsp;Prasad</span>
+          Hey ! I&apos;m <span className="text-white w-full">Haree&nbsp;Prasad</span>
           ,
           <br />
           a India - Based
