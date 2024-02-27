@@ -12,7 +12,7 @@ const About = () => {
     {
       id: 1,
       range: "APR 2023 - PRESENT",
-      position: "FRONTEND LEAD",
+      position: "SENIOR FRONTEND DEVELOPER",
       organization: "Addup Networks",
     },
     {
